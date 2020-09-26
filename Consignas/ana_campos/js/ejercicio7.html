@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <!--
+     Un usuario debe ingresar su nombre de usuario y ademas su clave(2 veces).
+    Mostrar un mensaje si los datos son correctos y las claves son iguales.
+    Se debe validar el tipo de dato ingresado en su nombre. 
+    Se debe validar que el nombre de usuario no puede ser menor a 4 caracteres ni mayor a 8 caracteres. 
+    Se debe validar que ambas claves sean iguales.
+
+ -->
+    </head>
+    <script>
+        var usuario;
+        var clave1;
+        var clave2;
+        usuario= prompt(`Ingrese nombre de usuario`);
+        clave1=prompt('Ingrese una clave de 4 a 8 caracteres');
+        clave2=prompt("Repita el ingreso de la clave:");
+
+        if (typeof usuario == "string" && usuario.length > 4 || usuario.length <=8 && clave1 == clave2)
+        {
+            document.write("correcto")
+        } 
+        else {
+            alert("Invalido");
+            usuario= prompt(`Ingrese nombre de usuario`);
+            clave1=prompt('Ingrese una clave:','');
+            clave2=prompt('Repita el ingreso de la clave:','');
+        }
+       
+      </script>
+
+      </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 
+        Escribir un programa que almacene en un arreglo de registros los nombres de los alumnos, 
+        sus notas parciales y finales. Calcular la nota promedio y mostrar un mensaje de APTO
+        si el alumno supera o iguala la calificación de 5 o NO APTO si no lo alcanza.
+        Hacerlo para un número de 5 alumnos.
+    -->        
+    </head>
+    <body>
+            <!-- Add your site or application content here -->
+ <script>
+    alumnos = []; 
+    for (var i = 1; i <= 2; i ++){
+
+    var nombre = prompt('Ingrese nombre del alumno');
+    alumnos.push(nombre);
+    var nota1 = prompt('Ingrese nota del alumno');
+    alumnos.push (nota1);
+    var nota2 = prompt('Ingrese nota 2');
+    alumnos.push(nota2);
+    var promedio = (parseInt(nota1) + parseInt(nota2)) / 2; 
+    alumnos.push(promedio);
+    console.log (alumnos)
+    if (promedio >= 5)
+    {alert('Aprobado')} 
+    else {alert('No aprobado')}
+    alumnos[0]=(nombre);
+    alumnos[1]=(nota1);
+    alumnos[2]=(nota2);
+    alumnos[3]=(promedio);
+    }
+ 
+</script>
+    </body>
+</html> 
